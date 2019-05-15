@@ -1,0 +1,67 @@
+{
+	"_version": "1.5.0",
+	"sap.app": {
+		"id": "th.co.protos.fiori.ui5.ui5train-2",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"dataSources": {
+			"employeeRemote": {
+				
+				"uri": "/sap/opu/odata/sap/ZMM_EMP_SRV",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "th.co.protos.fiori.ui5.ui5train-2.view.Detail",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "th.co.protos.fiori.ui5.ui5train.i18n.i18n"
+				}
+			},
+			"": {
+				"dataSource": "employeeRemote"
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/ui5train-2",
+		"_version": "1.1.0"
+	}
+}

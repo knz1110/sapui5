@@ -1,59 +1,59 @@
 <core:FragmentDefinition
    xmlns="sap.m"
-   xmlns:core="sap.ui.core" >
+   xmlns:core="sap.ui.core"
+   xmlns:f="sap.ui.layout.form" >
+	
    <Dialog
       id="CreateDialog"
-      title="Hello">
- 
-	   	<Panel>
-	   		<Label text="Employee ID"/> 
-		   	<Input 
+      title="Create Employee">
+		
+		<!-- Input Field -->
+		<f:SimpleForm>
+			
+			<Label text="Employee ID" />
+			<Input 
 				id="InputID" 
 				type="Text"
-				value=''
 				width="250px" 
 				maxLength="25" />
-		</Panel>
-		
-	   	<Panel>
+				
 			<Label text="Employee Name"/>
 			<Input 
 				id="InputName" 
 				type="Text"
-				value=''
 				width="250px" 
 				maxLength="25" />
-		</Panel>
-	   	
-	   	<Panel>
+				
 	   		<Label text="Employee Address"/>
 	   		<Input 
 				id="InputAddress" 
 				type="Text"
-				value=''
 				width="250px" 
 				maxLength="25" />
-	   	</Panel>
-	   	
-	   	<Panel>
+				
 	   		<Label text="Employee E-Mail"/>
 	   		<Input 
 				id="InputEmail" 
 				type="Text"
-				value=''
 				width="250px" 
 				maxLength="25" />
-		</Panel>
+				
+		</f:SimpleForm>
+	
+	   	<!-- Save Button & Cancel Button -->
 	   	
 	   	<Panel>
 		   	<Button
 	    	text="Save"
 	    	id="ClickSave"
-	    	press="ClickSave"/> 
+	    	press="ClickSave"
+	    	class="sapUiTinyMargin" /> 
+	    	
 	    	<Button
 	    	text="Cancel"
 	    	id="ClickCancel"
-	    	press="ClickCancel"/> 
+	    	press="ClickCancel"
+	    	class="sapUiTinyMargin" /> 
     	</Panel>
     	
    </Dialog>
