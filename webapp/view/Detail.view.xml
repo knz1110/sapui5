@@ -1,0 +1,33 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.demo.walkthrough.controller.App">
+	
+  <Table id="Table">
+	    <columns>
+	        <Column sortProperty="Col01" filterProperty="Col01">
+				<Label text="Employee ID"/>
+	        </Column>
+	    </columns>
+	    <columns>
+	        <Column sortProperty="Col02" filterProperty="Col02">
+				<Label text="Employee Name"/>
+	        </Column>
+	    </columns>
+	    <columns>
+	        <Column sortProperty="Col03" filterProperty="Col03">
+				<Label text="Employee Address"/>
+	        </Column>
+	    </columns>
+	    <columns>
+	        <Column sortProperty="Col04" filterProperty="Col04">
+				<Label text="Employee E-Mail"/>
+	        </Column>
+	    </columns>
+  </Table>
+   
+   <Panel>
+      <Button
+    	text="Create Employee"
+    	id="ShowCreate"
+    	press="ShowCreate"/> 
+   </Panel>
+   
+</mvc:View>

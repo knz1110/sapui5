@@ -1,0 +1,60 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="CreateDialog"
+      title="Hello">
+ 
+	   	<Panel>
+	   		<Label text="Employee ID"/> 
+		   	<Input 
+				id="InputID" 
+				type="Text"
+				value=''
+				width="250px" 
+				maxLength="25" />
+		</Panel>
+		
+	   	<Panel>
+			<Label text="Employee Name"/>
+			<Input 
+				id="InputName" 
+				type="Text"
+				value=''
+				width="250px" 
+				maxLength="25" />
+		</Panel>
+	   	
+	   	<Panel>
+	   		<Label text="Employee Address"/>
+	   		<Input 
+				id="InputAddress" 
+				type="Text"
+				value=''
+				width="250px" 
+				maxLength="25" />
+	   	</Panel>
+	   	
+	   	<Panel>
+	   		<Label text="Employee E-Mail"/>
+	   		<Input 
+				id="InputEmail" 
+				type="Text"
+				value=''
+				width="250px" 
+				maxLength="25" />
+		</Panel>
+	   	
+	   	<Panel>
+		   	<Button
+	    	text="Save"
+	    	id="ClickSave"
+	    	press="ClickSave"/> 
+	    	<Button
+	    	text="Cancel"
+	    	id="ClickCancel"
+	    	press="ClickCancel"/> 
+    	</Panel>
+    	
+   </Dialog>
+</core:FragmentDefinition>
